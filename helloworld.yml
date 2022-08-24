@@ -6,4 +6,4 @@
   tasks:
     - name: Install local SIMAM
       become: yes
-      command: 'ls -al /root/'
+      command: docker ps
