@@ -4,6 +4,7 @@
   connection: local
   gather_facts: false
   tasks:
-    - name: Install local SIMAM
-      become: yes
-      command: env
+    - command: "ls /user/bin/"
+      register: dir_out
+    - debug: var={{item}}
+      with_items: dir_out.stdout_lines
