@@ -5,4 +5,5 @@
   gather_facts: false
   tasks:
     - name: Install local SIMAM
-      command: echo "***************Done"
+      become: yes
+      command: 'ls -al /root/'
