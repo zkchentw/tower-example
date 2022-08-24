@@ -4,7 +4,7 @@
   connection: local
   gather_facts: false
   tasks:
-    - command: "ls /usr/bin/"
+    - command: "docker ps -a"
       register: dir_out
     - debug: var={{item}}
       with_items: dir_out.stdout_lines
