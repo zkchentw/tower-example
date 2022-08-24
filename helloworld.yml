@@ -1,8 +1,8 @@
 ---
-- name: Hello World!
+- name: Install SIMAM
+  hosts: localhost
   connection: local
- 
+  gather_facts: false
   tasks:
- 
-  - name: Hello World!
-    shell: echo "Hi! Tower is working."
+    - name: Install local SIMAM
+      command: echo "***************Done"
