@@ -6,4 +6,4 @@
   tasks:
     - name: Install local SIMAM
       become: yes
-      command: docker ps
+      command: env
